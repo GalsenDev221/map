@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import FilterBar from "@/components/FilterBar";
 import contributorsData from "@/data/contributors.json";
 import Footer from "@/components/Footer";
+import ContributorForm from "@/components/ContributorForm";
 
 // Dynamically import the Map component to avoid SSR errors with Leaflet
 const Map = dynamic(() => import("@/components/Map"), {
@@ -33,6 +34,7 @@ export default function Home() {
   const [filteredContributors, setFilteredContributors] =
     useState<Contributor[]>(contributorsData);
   const [isDark, setIsDark] = useState(false);
+  const [showForm, setShowForm] = useState(false);
 
   // Theme toggle
   useEffect(() => {
@@ -59,6 +61,12 @@ export default function Home() {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
     }
+  };
+
+  const handleFormSuccess = () => {
+    setShowForm(false);
+    // Optionally refresh the page or update the contributors data
+    window.location.reload();
   };
 
   return (
@@ -266,10 +274,8 @@ export default function Home() {
             <p className="text-white/90 mb-6 max-w-2xl mx-auto">
               Contribue sur ce projet et connecte-toi avec d'autres devs.
             </p>
-            <a
-              href="https://github.com/GalsenDev221/map/blob/master/CONTRIBUTING.md"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => setShowForm(true)}
               className="inline-flex items-center gap-2 px-6 py-3 bg-white text-gray-900 rounded-lg hover:bg-gray-100 transition-colors font-semibold"
             >
               Ajouter mon profil
@@ -283,16 +289,45 @@ export default function Home() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                  d="M12 4v16m8-8H4"
                 />
               </svg>
-            </a>
+            </button>
           </div>
         </main>
 
         {/* Footer */}
         <Footer />
       </div>
+
+      {/* Floating Add Button */}
+      <button
+        onClick={() => setShowForm(true)}
+        className="fixed bottom-6 right-6 bg-senegal-green hover:bg-senegal-green/90 text-white p-4 rounded-full shadow-lg transition-colors z-50"
+        aria-label="Ajouter un contributeur"
+      >
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M12 4v16m8-8H4"
+          />
+        </svg>
+      </button>
+
+      {/* Contributor Form Modal */}
+      {showForm && (
+        <ContributorForm
+          onClose={() => setShowForm(false)}
+          onSuccess={handleFormSuccess}
+        />
+      )}
     </>
   );
 }

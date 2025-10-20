@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Dakar",
+    "lat": 14.6937,
+    "lng": -17.4441
+  },
+  {
+    "name": "Thiès",
+    "lat": 14.7886,
+    "lng": -16.9260
+  },
+  {
+    "name": "Saint-Louis",
+    "lat": 16.0179,
+    "lng": -16.4897
+  },
+  {
+    "name": "Ziguinchor",
+    "lat": 12.5600,
+    "lng": -16.2630
+  },
+  {
+    "name": "Kaolack",
+    "lat": 14.1515,
+    "lng": -16.0726
+  },
+  {
+    "name": "Louga",
+    "lat": 15.6187,
+    "lng": -16.2244
+  },
+  {
+    "name": "Tambacounda",
+    "lat": 13.7707,
+    "lng": -13.6673
+  },
+  {
+    "name": "Kolda",
+    "lat": 12.9104,
+    "lng": -14.9507
+  },
+  {
+    "name": "Fatick",
+    "lat": 14.3390,
+    "lng": -16.4119
+  },
+  {
+    "name": "Diourbel",
+    "lat": 14.6539,
+    "lng": -16.2307
+  },
+  {
+    "name": "Matam",
+    "lat": 15.6559,
+    "lng": -13.2577
+  },
+  {
+    "name": "Kaffrine",
+    "lat": 14.1059,
+    "lng": -15.5508
+  },
+  {
+    "name": "Kédougou",
+    "lat": 12.5556,
+    "lng": -12.1808
+  },
+  {
+    "name": "Sédhiou",
+    "lat": 12.7081,
+    "lng": -15.5569
+  }
+]

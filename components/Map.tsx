@@ -52,7 +52,7 @@ export default function Map({ contributors }: MapProps) {
       <MapContainer
         center={center}
         zoom={7}
-        scrollWheelZoom={true}
+        scrollWheelZoom={false}
         className="h-full w-full"
       >
         <TileLayer
