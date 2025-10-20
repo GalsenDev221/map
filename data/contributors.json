@@ -16,5 +16,14 @@
     "github": "https://github.com/alphajoop",
     "lat": 16.064421,
     "lng": -16.450517
+  },
+  {
+    "id": 3,
+    "name": "Issakha CISSE",
+    "city": "Thiès",
+    "stack": ["Nuxt", "Laravel", "Flutter", "Spring Boot"],
+    "github": "https://github.com/cisse410",
+    "lat": 14.791539,
+    "lng": -16.925617
   }
 ]
