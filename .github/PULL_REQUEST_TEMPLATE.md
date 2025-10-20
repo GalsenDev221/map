@@ -1,6 +1,4 @@
-# Pull Request
-
-## Description
+# Description
 
 <!-- Décris brièvement tes changements -->
 
@@ -62,8 +60,6 @@
 <!-- Ajoute tout contexte additionnel sur la PR -->
 
 ---
-
-**Merci de contribuer à Galsen DEV Map !**
 
 <!--
 Rappel : Si tu ajoutes ton profil pour la première fois, assure-toi de :
