@@ -202,7 +202,7 @@ export default function About() {
 
             {/* Community */}
             <section className="bg-gradient-to-r from-senegal-green via-senegal-yellow to-senegal-red rounded-lg p-8 text-center">
-              <h3 className="text-2xl font-bold text-dark/90 mb-3">
+              <h3 className="text-2xl font-bold text-white/90 mb-3">
                 Rejoins la communauté Galsen DEV
               </h3>
               <p className="text-white/90 mb-6 max-w-2xl mx-auto">

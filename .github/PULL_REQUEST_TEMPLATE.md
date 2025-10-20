@@ -1,6 +1,4 @@
-# Pull Request
-
-## Description
+# Description
 
 <!-- Décris brièvement tes changements -->
 
@@ -40,10 +38,12 @@
 ## Pour les ajouts de profil uniquement
 
 - [ ] J'ai vérifié que mon ID est unique
-- [ ] Mes coordonnées GPS sont correctes
+- [ ] **Mes coordonnées GPS correspondent au CENTRE de ma ville, PAS à mon domicile** 🔒
+- [ ] J'ai utilisé un point de repère public (monument, place, centre-ville)
 - [ ] Mon profil GitHub est accessible publiquement
 - [ ] J'ai testé que mon marqueur s'affiche correctement sur la carte
 - [ ] Ma stack technique est pertinente (3-5 technologies max)
+- [ ] Je suis à l'aise avec le fait que ces informations soient publiques
 
 ## Checklist
 
@@ -54,16 +54,12 @@
 - [ ] Mes changements ne génèrent pas de nouveaux warnings
 - [ ] J'ai ajouté des tests si applicable
 - [ ] Tous les tests passent localement
-- [ ] Mes commits suivent la convention [Conventional Commits](https://www.conventionalcommits.org/)
-- [ ] J'ai lu et j'accepte le [Code of Conduct](../CODE_OF_CONDUCT.md)
 
 ## Informations supplémentaires
 
 <!-- Ajoute tout contexte additionnel sur la PR -->
 
 ---
-
-**Merci de contribuer à Galsen DEV Map !**
 
 <!--
 Rappel : Si tu ajoutes ton profil pour la première fois, assure-toi de :
