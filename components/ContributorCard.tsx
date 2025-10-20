@@ -1,3 +1,5 @@
+import StackIcon from "./StackIcon";
+
 interface Contributor {
   id: number;
   name: string;
@@ -35,12 +37,12 @@ export default function ContributorCard({ contributor }: ContributorCardProps) {
         <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Stack</p>
         <div className="flex flex-wrap gap-1">
           {contributor.stack.map((tech, index) => (
-            <span
+            <div
               key={index}
-              className="px-2 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-medium"
+              className="px-2.5 py-1.5 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors"
             >
-              {tech}
-            </span>
+              <StackIcon tech={tech} size={16} showLabel={true} theme="light" />
+            </div>
           ))}
         </div>
       </div>
