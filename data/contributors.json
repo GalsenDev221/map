@@ -16,5 +16,14 @@
     "github": "https://github.com/alphajoop",
     "lat": 16.064421,
     "lng": -16.450517
+  },
+  {
+    "id": 3,
+    "name": "Mame Diarra Laye DJITE",
+    "city": "Dakar",
+    "stack": ["React","Vue", "TypeScript", "Nuxt.js", "laravel"],
+    "github": "https://github.com/MameDiarraLayeDjite",
+    "lat": 14.7771207,
+    "lng": -17.390071
   }
 ]
