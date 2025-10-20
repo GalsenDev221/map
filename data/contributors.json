@@ -34,5 +34,14 @@
     "github": "https://github.com/sir-kain",
     "lat": 14.6935,
     "lng": -17.448
+  },
+  {
+    "id": 5,
+    "name": "Abdou KANDJI",
+    "city": "Thiès",
+    "stack": ["Python", "React", "Scala", "Angular", "Node.js", "Java", "C#", "TypeScript", "PHP", "Vuejs", "Docker", "MySQL", "PostgreSQL"],
+    "github": "https://github.com/kandjiabdou",
+    "lat": 14.8074281,
+    "lng": -16.9051858
   }
 ]
