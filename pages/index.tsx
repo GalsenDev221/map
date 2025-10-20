@@ -267,7 +267,7 @@ export default function Home() {
               Contribue sur ce projet et connecte-toi avec d'autres devs.
             </p>
             <a
-              href="https://github.com/GalsenDev221/map/blob/main/CONTRIBUTING.md"
+              href="https://github.com/GalsenDev221/map/blob/master/CONTRIBUTING.md"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-white text-gray-900 rounded-lg hover:bg-gray-100 transition-colors font-semibold"

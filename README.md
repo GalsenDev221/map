@@ -54,7 +54,7 @@ npm run dev
 
 Ouvre [http://localhost:3000](http://localhost:3000) dans ton navigateur.
 
-## 🤝 Comment Contribuer
+## 🫱🏾‍🫲🏾 Comment Contribuer
 
 On accueille TOUTES les contributions avec plaisir !
 
