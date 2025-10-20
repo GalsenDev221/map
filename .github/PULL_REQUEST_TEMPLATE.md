@@ -56,8 +56,6 @@
 - [ ] Mes changements ne génèrent pas de nouveaux warnings
 - [ ] J'ai ajouté des tests si applicable
 - [ ] Tous les tests passent localement
-- [ ] Mes commits suivent la convention [Conventional Commits](https://www.conventionalcommits.org/)
-- [ ] J'ai lu et j'accepte le [Code of Conduct](../CODE_OF_CONDUCT.md)
 
 ## Informations supplémentaires
 
