@@ -40,10 +40,12 @@
 ## Pour les ajouts de profil uniquement
 
 - [ ] J'ai vérifié que mon ID est unique
-- [ ] Mes coordonnées GPS sont correctes
+- [ ] **Mes coordonnées GPS correspondent au CENTRE de ma ville, PAS à mon domicile** 🔒
+- [ ] J'ai utilisé un point de repère public (monument, place, centre-ville)
 - [ ] Mon profil GitHub est accessible publiquement
 - [ ] J'ai testé que mon marqueur s'affiche correctement sur la carte
 - [ ] Ma stack technique est pertinente (3-5 technologies max)
+- [ ] Je suis à l'aise avec le fait que ces informations soient publiques
 
 ## Checklist
 

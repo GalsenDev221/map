@@ -76,6 +76,8 @@ On accueille TOUTES les contributions avec plaisir !
 
 > 💡 **Astuce** : Utilise [gps-coordinates.net](https://www.gps-coordinates.net) pour trouver les coordonnées de ta ville
 
+🔒 Important : Pour ta sécurité, utilise UNIQUEMENT les coordonnées du centre de ta ville ou d'un point de repère public (monument, place, etc.). Ne mets JAMAIS ton adresse personnelle ou celle de ton lieu de travail.
+
 4. Crée une Pull Request avec le titre : `feat: add [Ton Nom] from [Ta Ville]`
 
 Lis notre [Guide de Contribution](CONTRIBUTING.md) pour plus de détails.
