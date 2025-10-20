@@ -69,24 +69,39 @@ Si tu remarques des coordonnées trop précises ou des informations sensibles, c
 
 ## Ajouter ton profil
 
-### Étape 1 : Fork le repo
+### Option 1 : Formulaire en ligne (Recommandé) ⭐
+
+La façon la plus simple d'ajouter ton profil ! Clique sur le bouton flottant "+" en bas à droite de la page d'accueil, ou sur "Ajouter mon profil" dans la section d'appel à l'action.
+
+**Avantages :**
+
+- Pas besoin de cloner le projet
+- Interface intuitive avec validation
+- Coordonnées automatiques pour la sécurité
+- Ajout instantané à la carte
+
+### Option 2 : Contribution classique (Via GitHub)
+
+Si tu préfères contribuer directement au code :
+
+#### Étape 1 : Fork le repo
 
 Clique sur le bouton "Fork" en haut à droite du repo.
 
-### Étape 2 : Clone ton fork
+#### Étape 2 : Clone ton fork
 
 ```bash
 git clone https://github.com/TON-USERNAME/map.git
 cd map
 ```
 
-### Étape 3 : Crée une branche
+#### Étape 3 : Crée une branche
 
 ```bash
 git checkout -b add-mon-profil
 ```
 
-### Étape 4 : Modifie `data/contributors.json`
+#### Étape 4 : Modifie `data/contributors.json`
 
 Ajoute tes informations à la fin du tableau :
 
@@ -116,7 +131,7 @@ Ajoute tes informations à la fin du tableau :
 - **NE METS JAMAIS** tes coordonnées exactes (ton domicile, ton lieu de travail)
 - Utilise **UNIQUEMENT** les coordonnées du centre-ville ou d'un point public connu de ta ville
 
-### Étape 5 : Teste localement
+#### Étape 5 : Teste localement
 
 ```bash
 npm install
@@ -130,7 +145,7 @@ Vérifie que ton profil s'affiche correctement sur la carte.
 - Assure-toi que le marqueur est bien placé sur le centre de ta ville, pas sur ton domicile
 - Zoom sur la carte et vérifie que les coordonnées ne révèlent pas d'information personnelle sensible
 
-### Étape 6 : Commit et Push
+#### Étape 6 : Commit et Push
 
 ```bash
 git add data/contributors.json
@@ -138,7 +153,7 @@ git commit -m "feat: add [Ton Nom] from [Ta Ville]"
 git push origin add-mon-profil
 ```
 
-### Étape 7 : Crée une Pull Request
+#### Étape 7 : Crée une Pull Request
 
 1. Va sur ton fork sur GitHub
 2. Clique sur "Compare & pull request"
