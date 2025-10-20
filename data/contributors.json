@@ -39,7 +39,7 @@
     "id": 5,
     "name": "Abdou KANDJI",
     "city": "Thiès",
-    "stack": ["Python", "React", "Scala", "Angular", "Node.js", "Java", "C#", "TypeScript", "PHP", "Vuejs", "Docker", "MySQL", "PostgreSQL"],
+    "stack": ["Python", "Angular", "Node.js", "Java", "Scala"],
     "github": "https://github.com/kandjiabdou",
     "lat": 14.8074281,
     "lng": -16.9051858
