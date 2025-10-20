@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Daouda BA",
     "city": "Dakar",
-    "stack": ["React", "Go", "TypeScript", "Next.js"],
+    "stack": ["React", "Go", "TypeScript", "Next.js", "Flutter"],
     "github": "https://github.com/daoodaba975",
     "lat": 14.7771207,
     "lng": -17.390071
