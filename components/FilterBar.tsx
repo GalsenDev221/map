@@ -13,11 +13,13 @@ interface Contributor {
 interface FilterBarProps {
   contributors: Contributor[];
   onFilterChange: (filtered: Contributor[]) => void;
+  onAddProfile: () => void;
 }
 
 export default function FilterBar({
   contributors,
   onFilterChange,
+  onAddProfile,
 }: FilterBarProps) {
   const [selectedCity, setSelectedCity] = useState<string>("all");
   const [selectedStack, setSelectedStack] = useState<string>("all");
@@ -82,12 +84,33 @@ export default function FilterBar({
           </svg>
           Filtres
         </h2>
-        <button
-          onClick={resetFilters}
-          className="text-sm text-senegal-green hover:text-senegal-green/80 font-medium transition-colors"
-        >
-          Réinitialiser
-        </button>
+        <div className="flex items-center gap-3">
+          <button
+            onClick={resetFilters}
+            className="text-sm text-senegal-green hover:text-senegal-green/80 font-medium transition-colors"
+          >
+            Réinitialiser
+          </button>
+          <button
+            onClick={onAddProfile}
+            className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-senegal-green to-senegal-yellow text-white rounded-lg hover:from-senegal-green/90 hover:to-senegal-yellow/90 transition-all font-semibold shadow-lg"
+          >
+            <svg
+              className="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+              />
+            </svg>
+            Ajouter mon profil
+          </button>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

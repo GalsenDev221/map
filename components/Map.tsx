@@ -30,6 +30,7 @@ interface MapProps {
 
 export default function Map({ contributors }: MapProps) {
   const [isMounted, setIsMounted] = useState(false);
+  const [isMapReady, setIsMapReady] = useState(false);
 
   useEffect(() => {
     setIsMounted(true);
@@ -52,8 +53,9 @@ export default function Map({ contributors }: MapProps) {
       <MapContainer
         center={center}
         zoom={7}
-        scrollWheelZoom={false}
+        scrollWheelZoom={isMapReady}
         className="h-full w-full"
+        whenReady={() => setIsMapReady(true)}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -71,6 +73,20 @@ export default function Map({ contributors }: MapProps) {
           </Marker>
         ))}
       </MapContainer>
+
+      {!isMapReady && (
+        <div className="absolute inset-0 bg-white dark:bg-gray-800 bg-opacity-80 dark:bg-opacity-80 flex items-center justify-center z-10 rounded-lg">
+          <div className="text-center">
+            <div className="w-12 h-12 border-4 border-senegal-green border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+            <p className="text-gray-600 dark:text-gray-400 font-medium">
+              Chargement de la carte...
+            </p>
+            <p className="text-sm text-gray-500 dark:text-gray-500 mt-1">
+              Cliquez sur la carte pour activer le zoom
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
