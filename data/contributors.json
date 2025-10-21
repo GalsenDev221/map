@@ -1,5 +1,21 @@
 [
   {
+    "name": "Maodo NDIAYE (49maodo)",
+    "city": "Dakar",
+    "stack": [
+      "Laravel",
+      "Asp.net Core",
+      "Nest.js",
+      "Next.js",
+      "React",
+      "Angular",
+      "React Native"
+    ],
+    "github": "https://github.com/49maodo",
+    "lat": 14.786501792316935,
+    "lng": -17.30954013411867
+  },
+  {
     "name": "Alpha DIOP",
     "city": "Saint-Louis",
     "stack": [
@@ -12,6 +28,19 @@
     "github": "https://github.com/alphajoop",
     "lat": 16.064421,
     "lng": -16.450517
+  },
+  {
+    "name": "Mouhamadou Moustapha Diagne",
+    "city": "Dakar",
+    "stack": [
+      "Go",
+      "Java",
+      "JavaScript",
+      "Php"
+    ],
+    "github": "https://github.com/Bakemono-san",
+    "lat": 14.7221588,
+    "lng": -17.4889547
   },
   {
     "name": "Issakha CISSE",
