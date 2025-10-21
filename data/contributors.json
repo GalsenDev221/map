@@ -43,5 +43,14 @@
     "github": "https://github.com/kandjiabdou",
     "lat": 14.8074281,
     "lng": -16.9051858
+  },
+  {
+    "id":6,
+    "name": "Abdallah Sow",
+    "city": "Lac Rose",
+    "stack": ["Python","Django","PHP", "Laravel", "C#"],
+    "github": "https://github.com/grandlay-e",
+    "lat": 14.830136,
+    "lng": -17.245986
   }
 ]
