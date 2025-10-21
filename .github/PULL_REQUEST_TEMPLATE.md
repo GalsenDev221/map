@@ -31,10 +31,6 @@
 
 <!-- Ajoute des screenshots pour les changements visuels -->
 
-| Avant | Après |
-| ----- | ----- |
-| ...   | ...   |
-
 ## Pour les ajouts de profil uniquement
 
 - [ ] J'ai vérifié que mon ID est unique

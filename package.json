@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Carte interactive des développeurs et communautés tech du Sénégal",
   "scripts": {
-    "dev": "next dev",
+    "prebuild": "npm run build:users",
+    "build:users": "node scripts/build_contributeurs.mjs",
+    "dev": "npm run build:users && next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "npm run build:users && next start",
     "lint": "next lint"
   },
   "dependencies": {

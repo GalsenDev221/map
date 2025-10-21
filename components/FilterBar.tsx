@@ -1,7 +1,6 @@
 import { useState, useMemo } from "react";
 
 interface Contributor {
-  id: number;
   name: string;
   city: string;
   stack: string[];
