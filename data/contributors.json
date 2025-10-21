@@ -129,9 +129,13 @@
     "stack": [
       "Python",
       "JavaScript",
+      "TypeScript",
       "React Native",
+      "Firebase",
       "Next.js",
-      "Wordpress"
+      "Node.js",
+      "Wordpress",
+      "Expo"
     ],
     "github": "https://github.com/bmaxtar",
     "lat": 14.69596,
