@@ -30,18 +30,7 @@
     "id": 4,
     "name": "Ahmadou Waly Ndiaye (Sir Kane)",
     "city": "Dakar",
-    "stack": [
-      "Javascript",
-      "Vuejs",
-      "TypeScript",
-      "Eleventy",
-      "Astro",
-      "Nuxt.js",
-      "PHP",
-      "Symfony",
-      "Laravel",
-      "Docker"
-    ],
+    "stack": ["Javascript", "Vuejs", "TypeScript", "Eleventy", "Astro", "Nuxt.js", "PHP", "Symfony", "Laravel", "Docker"],
     "github": "https://github.com/sir-kain",
     "lat": 14.6935,
     "lng": -17.448
@@ -72,5 +61,14 @@
     "github": "https://github.com/latyr0503",
     "lat": 14.7316875,
     "lng": -17.3186875
+  },
+  {
+    "id": 8,
+    "name": "Abdallah Sow",
+    "city": "Lac-Rose",
+    "stack": ["Python","Django","PHP", "Laravel", "C#"],
+    "github": "https://github.com/grandlay-e",
+    "lat": 14.830136,
+    "lng": -17.245986
   }
 ]
