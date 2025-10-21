@@ -10,56 +10,71 @@ interface Contributor {
 }
 
 interface FilterBarProps {
-  contributors: Contributor[];
+  allContributors: Contributor[];
+  filteredCount: number;
   onFilterChange: (filtered: Contributor[]) => void;
 }
 
 export default function FilterBar({
-  contributors,
+  allContributors,
+  filteredCount,
   onFilterChange,
 }: FilterBarProps) {
   const [selectedCity, setSelectedCity] = useState<string>("all");
   const [selectedStack, setSelectedStack] = useState<string>("all");
+  const [searchTerm, setSearchTerm] = useState<string>("");
 
   // Extract cities and stacks
   const cities = useMemo(() => {
-    const citySet = new Set(contributors.map((c) => c.city));
+    const citySet = new Set(allContributors.map((c) => c.city));
     return ["all", ...Array.from(citySet).sort()];
-  }, [contributors]);
+  }, [allContributors]);
 
   const stacks = useMemo(() => {
-    const stackSet = new Set(contributors.flatMap((c) => c.stack));
+    const stackSet = new Set(allContributors.flatMap((c) => c.stack));
     return ["all", ...Array.from(stackSet).sort()];
-  }, [contributors]);
+  }, [allContributors]);
 
-  const applyFilters = (city: string, stack: string) => {
-    let filtered = contributors;
+  const applyFilters = (city: string, stack: string, search: string) => {
+    let filtered = allContributors;
 
     if (city !== "all") {
       filtered = filtered.filter((c) => c.city === city);
     }
-
     if (stack !== "all") {
       filtered = filtered.filter((c) => c.stack.includes(stack));
     }
-
+    if (search.trim() !== "") {
+      const lowercasedSearch = search.toLowerCase();
+      filtered = filtered.filter(
+        (c) =>
+          c.name.toLowerCase().includes(lowercasedSearch) ||
+          c.github.toLowerCase().includes(lowercasedSearch)
+      );
+    }
     onFilterChange(filtered);
   };
 
   const handleCityChange = (city: string) => {
     setSelectedCity(city);
-    applyFilters(city, selectedStack);
+    applyFilters(city, selectedStack, searchTerm);
   };
 
   const handleStackChange = (stack: string) => {
     setSelectedStack(stack);
-    applyFilters(selectedCity, stack);
+    applyFilters(selectedCity, stack, searchTerm);
+  };
+
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchTerm(e.target.value);
+    applyFilters(selectedCity, selectedStack, e.target.value);
   };
 
   const resetFilters = () => {
     setSelectedCity("all");
     setSelectedStack("all");
-    onFilterChange(contributors);
+    setSearchTerm("");
+    onFilterChange(allContributors);
   };
 
   return (
@@ -89,13 +104,35 @@ export default function FilterBar({
         </button>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {/* Search by name or github username */}
+        <div>
+          <label
+            htmlFor="search-contributor"
+            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+          >
+            Nom / Pseudo Github
+          </label>
+          <input
+            id="search-contributor"
+            type="text"
+            value={searchTerm}
+            onChange={handleSearchChange}
+            placeholder="Rechercher par nom ou pseudo github..."
+            className="w-full px-4 py-2 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-senegal-green focus:border-transparent text-gray-900 dark:text-white"
+          />
+        </div>
+
         {/* Filter by city */}
         <div>
-          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+          <label
+            htmlFor="city-filter"
+            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+          >
             Ville
           </label>
           <select
+            id="city-filter"
             value={selectedCity}
             onChange={(e) => handleCityChange(e.target.value)}
             className="w-full px-4 py-2 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-senegal-green focus:border-transparent text-gray-900 dark:text-white"
@@ -110,10 +147,14 @@ export default function FilterBar({
 
         {/* Filter by stack */}
         <div>
-          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+          <label
+            htmlFor="stack-filter"
+            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+          >
             Stack / Technologie
           </label>
           <select
+            id="stack-filter"
             value={selectedStack}
             onChange={(e) => handleStackChange(e.target.value)}
             className="w-full px-4 py-2 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-senegal-green focus:border-transparent text-gray-900 dark:text-white"
@@ -129,13 +170,19 @@ export default function FilterBar({
 
       {/* Stats Bar */}
       <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
-        <p className="text-sm text-gray-600 dark:text-gray-400">
-          <span className="font-semibold text-gray-900 dark:text-white">
-            {contributors.length}
-          </span>{" "}
-          contributeur{contributors.length > 1 ? "s" : ""} affiché
-          {contributors.length > 1 ? "s" : ""}
-        </p>
+        {filteredCount > 0 ? (
+          <p className="text-sm text-gray-600 dark:text-gray-400">
+            <span className="font-semibold text-gray-900 dark:text-white">
+              {filteredCount}
+            </span>{" "}
+            contributeur{filteredCount > 1 ? "s" : ""} affiché
+            {filteredCount > 1 ? "s" : ""}
+          </p>
+        ) : (
+          <p className="text-sm text-gray-500 dark:text-gray-400">
+            Aucun résultat trouvé.
+          </p>
+        )}
       </div>
     </div>
   );
