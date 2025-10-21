@@ -3,7 +3,13 @@
     "name": "Alpha DIOP",
     "city": "Saint-Louis",
     "github_username": "alphajoop",
-    "stack": ["React", "Rust", "TypeScript", "Next.js", "Nest.js"],
+    "stack": [
+      "React",
+      "Rust",
+      "TypeScript",
+      "Next.js",
+      "Nest.js"
+    ],
     "github": "https://github.com/alphajoop",
     "lat": 16.064421,
     "lng": -16.450517
@@ -12,7 +18,12 @@
     "name": "Issakha CISSE",
     "city": "Thiès",
     "github_username": "cisse410",
-    "stack": ["Nuxt", "Laravel", "Flutter", "Spring Boot"],
+    "stack": [
+      "Nuxt",
+      "Laravel",
+      "Flutter",
+      "Spring Boot"
+    ],
     "github": "https://github.com/cisse410",
     "lat": 14.791539,
     "lng": -16.925617
@@ -21,7 +32,13 @@
     "name": "Daouda BA",
     "city": "Dakar",
     "github_username": "daoodaba975",
-    "stack": ["React", "Go", "TypeScript", "Next.js", "Flutter"],
+    "stack": [
+      "React",
+      "Go",
+      "TypeScript",
+      "Next.js",
+      "Flutter"
+    ],
     "github": "https://github.com/daoodaba975",
     "lat": 14.7771207,
     "lng": -17.390071
@@ -29,7 +46,13 @@
   {
     "name": "Abdallah Sow",
     "city": "Lac-Rose",
-    "stack": ["Python", "Django", "PHP", "Laravel", "C#"],
+    "stack": [
+      "Python",
+      "Django",
+      "PHP",
+      "Laravel",
+      "C#"
+    ],
     "github": "https://github.com/grandlay-e",
     "lat": 14.830136,
     "lng": -17.245986
@@ -38,7 +61,13 @@
     "name": "Abdou KANDJI",
     "city": "Thiès",
     "github_username": "kandjiabdou",
-    "stack": ["Python", "Angular", "Node.js", "Java", "Scala"],
+    "stack": [
+      "Python",
+      "Angular",
+      "Node.js",
+      "Java",
+      "Scala"
+    ],
     "github": "https://github.com/kandjiabdou",
     "lat": 14.8074281,
     "lng": -16.9051858
@@ -46,7 +75,13 @@
   {
     "name": "Latyr_fit_dev",
     "city": "Dakar",
-    "stack": ["Javascript", "TypeScript", "Docker", "Next.js", "Nest.js"],
+    "stack": [
+      "Javascript",
+      "TypeScript",
+      "Docker",
+      "Next.js",
+      "Nest.js"
+    ],
     "github": "https://github.com/latyr0503",
     "lat": 14.7316875,
     "lng": -17.3186875
@@ -54,7 +89,13 @@
   {
     "name": "Amadou Lamine NDIAYE (LvmzooDev23)",
     "city": "Dakar",
-    "stack": ["PHP", "Laravel", "Java", "Javascript", "Angular"],
+    "stack": [
+      "PHP",
+      "Laravel",
+      "Java",
+      "Javascript",
+      "Angular"
+    ],
     "github": "https://github.com/LvmzooDev23",
     "lat": 14.786574,
     "lng": -17.311898

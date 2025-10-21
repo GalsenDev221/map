@@ -20,7 +20,6 @@ const Map = dynamic(() => import("@/components/Map"), {
 });
 
 interface Contributor {
-  id: number;
   name: string;
   city: string;
   stack: string[];
