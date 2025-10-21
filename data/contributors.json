@@ -14,6 +14,19 @@
     "lng": -16.450517
   },
   {
+    "name": "Mouhamadou Moustapha Diagne",
+    "city": "Dakar",
+    "stack": [
+      "Go",
+      "Java",
+      "JavaScript",
+      "Php"
+    ],
+    "github": "https://github.com/Bakemono-san",
+    "lat": 14.7221588,
+    "lng": -17.4889547
+  },
+  {
     "name": "Issakha CISSE",
     "city": "Thiès",
     "stack": [
@@ -128,5 +141,21 @@
     "github": "https://github.com/sir-kain",
     "lat": 14.6935,
     "lng": -17.448
+  },
+  {
+    "name": "Ben Hattab Mahdi",
+    "city": "Dakar",
+    "stack": [
+      "React",
+      "Next.js",
+      "Laravel",
+      "Node.js",
+      "Flutter",
+      "Docker",
+      "Express.js"
+    ],
+    "github": "https://github.com/crossben",
+    "lat": 14.6937,
+    "lng": -17.4441
   }
 ]
