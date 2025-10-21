@@ -97,4 +97,4 @@ En quoi cela aiderait la communauté ?
 
 ---
 
-**Merci de contribuer à Galsen DEV Map ! 🇸🇳**
+**Merci de contribuer à Galsen DEV Map !**
