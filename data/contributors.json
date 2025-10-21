@@ -19,6 +19,7 @@
   },
   {
     "id": 3,
+
     "name": "Issakha CISSE",
     "city": "Thiès",
     "stack": ["Nuxt", "Laravel", "Flutter", "Spring Boot"],
@@ -34,5 +35,14 @@
     "github": "https://github.com/sir-kain",
     "lat": 14.6935,
     "lng": -17.448
+  },
+  {
+    "id": 5,
+    "name": "Mame Diarra Laye DJITE",
+    "city": "Dakar",
+    "stack": ["React","Vue", "TypeScript", "Nuxt.js", "laravel"],
+    "github": "https://github.com/MameDiarraLayeDjite",
+    "lat": 14.7771207,
+    "lng": -17.390071
   }
 ]
