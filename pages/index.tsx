@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
+
+import Header from "@/components/Header";
 import FilterBar from "@/components/FilterBar";
 import contributorsData from "@/data/contributors.json";
+import Footer from "@/components/Footer";
 
 // Dynamically import the Map component to avoid SSR errors with Leaflet
 const Map = dynamic(() => import("@/components/Map"), {
@@ -61,15 +63,10 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>Galsen DEV Map - La carte des développeurs du Sénégal</title>
-        <meta
-          name="description"
-          content="Découvrez la communauté tech du Sénégal avec Galsen DEV Map."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Header
+        header="Galsen DEV Map - La carte des développeurs du Sénégal."
+        description="Découvrez la communauté tech du Sénégal avec Galsen DEV Map."
+      />
 
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
         {/* Header */}
@@ -270,7 +267,7 @@ export default function Home() {
               Contribue sur ce projet et connecte-toi avec d'autres devs.
             </p>
             <a
-              href="https://github.com/GalsenDev221/map/blob/main/CONTRIBUTING.md"
+              href="https://github.com/GalsenDev221/map/blob/master/CONTRIBUTING.md"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-white text-gray-900 rounded-lg hover:bg-gray-100 transition-colors font-semibold"
@@ -294,24 +291,7 @@ export default function Home() {
         </main>
 
         {/* Footer */}
-        <footer className="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 mt-16">
-          <div className="container mx-auto px-4 py-8">
-            <div className="text-center text-gray-600 dark:text-gray-400">
-              <p className="mb-2">
-                Fait avec ❤️ par la communauté{" "}
-                <a
-                  href="https://galsen.dev"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-semibold text-senegal-green"
-                >
-                  Galsen DEV
-                </a>
-              </p>
-              <p className="text-sm">Hacktoberfest 2025</p>
-            </div>
-          </div>
-        </footer>
+        <Footer />
       </div>
     </>
   );
