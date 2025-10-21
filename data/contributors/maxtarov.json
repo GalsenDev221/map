@@ -1,17 +1,7 @@
 {
   "name": "Moctar Mamadou BA",
   "city": "Dakar",
-  "stack": [
-    "Python",
-    "JavaScript",
-    "TypeScript",
-    "React Native",
-    "Firebase",
-    "Next.js",
-    "Node",
-    "Wordpress",
-    "Expo"
-  ],
+  "stack": ["Python", "JavaScript", "React Native", "Next.js", "Wordpress"],
   "github": "https://github.com/bmaxtar",
   "lat": 14.69596,
   "lng": -17.44798
