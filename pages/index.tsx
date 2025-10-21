@@ -168,6 +168,7 @@ export default function Home() {
           <FilterBar
             contributors={contributorsData}
             onFilterChange={setFilteredContributors}
+            onAddProfile={() => setShowForm(true)}
           />
 
           {/* Map */}
