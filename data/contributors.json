@@ -37,6 +37,15 @@
   },
   {
     "id": 5,
+    "name": "Abdou KANDJI",
+    "city": "Thiès",
+    "stack": ["Python", "Angular", "Node.js", "Java", "Scala"],
+    "github": "https://github.com/kandjiabdou",
+    "lat": 14.8074281,
+    "lng": -16.9051858
+  },
+  {
+    "id": 6,
     "name": "Amadou Lamine NDIAYE (LvmzooDev23)",
     "city": "Dakar",
     "stack": ["PHP", "Laravel", "Java", "Javascript", "Angular"],
