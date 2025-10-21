@@ -1,7 +1,6 @@
 {
   "name": "Alpha DIOP",
   "city": "Saint-Louis",
-  "github_username": "alphajoop",
   "stack": ["React", "Rust", "TypeScript", "Next.js", "Nest.js"],
   "github": "https://github.com/alphajoop",
   "lat": 16.064421,
