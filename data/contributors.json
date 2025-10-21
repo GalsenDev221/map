@@ -14,6 +14,32 @@
     "lng": -16.450517
   },
   {
+    "name": "Mouhamadou Moustapha Diagne",
+    "city": "Dakar",
+    "stack": [
+      "Go",
+      "Java",
+      "JavaScript",
+      "Php"
+    ],
+    "github": "https://github.com/Bakemono-san",
+    "lat": 14.7221588,
+    "lng": -17.4889547
+  },
+  {
+    "name": "Baye Lahad dia",
+    "city": "Touba",
+    "stack": [
+      "Bootstrap",
+      "Apache",
+      "MySQL",
+      "PHP"
+    ],
+    "github": "https://github.com/baye333",
+    "lat": 14.86577,
+    "lng": -15.885838999999999
+  },
+  {
     "name": "Issakha CISSE",
     "city": "Thiès",
     "stack": [
