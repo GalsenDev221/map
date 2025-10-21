@@ -15,7 +15,6 @@ L.Icon.Default.mergeOptions({
 });
 
 interface Contributor {
-  id: number;
   name: string;
   city: string;
   stack: string[];
@@ -62,7 +61,7 @@ export default function Map({ contributors }: MapProps) {
 
         {contributors.map((contributor) => (
           <Marker
-            key={contributor.id}
+            key={contributor.name}
             position={[contributor.lat, contributor.lng]}
           >
             <Popup>
