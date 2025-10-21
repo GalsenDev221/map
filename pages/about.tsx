@@ -170,11 +170,13 @@ export default function About() {
                         1. Ajoute ton profil
                       </h4>
                       <p className="text-sm text-gray-600 dark:text-gray-400">
-                        Fork le repo, ajoute tes infos dans{" "}
+                        Fork le repo, crée un fichier JSON (avec comme nom votre
+                        "username_github") dans le dossier{" "}
                         <code className="bg-gray-200 dark:bg-gray-600 px-2 py-1 rounded">
-                          contributors.json
-                        </code>
-                        , et crée une pull request. C'est tout !
+                          data/contributors
+                        </code>{" "}
+                        et ajoute tes informations dans le fichier créé. Crée
+                        une pull request et c'est tout !
                       </p>
                     </div>
                     <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
