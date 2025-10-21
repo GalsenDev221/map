@@ -36,12 +36,12 @@
     "lng": -17.448
   },
   {
-    "id":5,
-    "name": "Abdallah Sow",
-    "city": "Lac Rose",
-    "stack": ["Python","Django","PHP", "Laravel", "C#"],
-    "github": "https://github.com/grandlay-e",
-    "lat": 14.830136,
-    "lng": -17.245986
+    "id": 5,
+    "name": "Abdou KANDJI",
+    "city": "Thiès",
+    "stack": ["Python", "Angular", "Node.js", "Java", "Scala"],
+    "github": "https://github.com/kandjiabdou",
+    "lat": 14.8074281,
+    "lng": -16.9051858
   }
 ]
