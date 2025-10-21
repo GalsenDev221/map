@@ -133,7 +133,7 @@ Vérifie que ton profil s'affiche correctement sur la carte.
 ### Étape 6 : Commit et Push
 
 ```bash
-git add data/contributors.json data/contributors/username.json
+git add data/contributors.json data/contributors/<ton-username>.json
 git commit -m "feat: add [Ton Nom] from [Ta Ville]"
 git push origin add-mon-profil
 ```

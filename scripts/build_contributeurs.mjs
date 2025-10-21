@@ -1,4 +1,4 @@
-// scripts/build-users.js
+// scripts/build_contributeurs.mjs
 import fs from "fs";
 import path from "path";
 

@@ -28,6 +28,9 @@ interface MapProps {
 }
 
 export default function Map({ contributors }: MapProps) {
+  // Get GitHub username from URL
+  const getGithubUsername = (url: string) => url.split("/").pop() || url;
+
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -61,7 +64,7 @@ export default function Map({ contributors }: MapProps) {
 
         {contributors.map((contributor) => (
           <Marker
-            key={contributor.name}
+            key={getGithubUsername(contributor.github)}
             position={[contributor.lat, contributor.lng]}
           >
             <Popup>

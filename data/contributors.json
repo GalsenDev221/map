@@ -97,6 +97,20 @@
     "lng": -17.311898
   },
   {
+    "name": "Mame Diarra Laye DJITE",
+    "city": "Dakar",
+    "stack": [
+      "React",
+      "Vue",
+      "TypeScript",
+      "Nuxt.js",
+      "laravel"
+    ],
+    "github": "https://github.com/MameDiarraLayeDjite",
+    "lat": 14.7771207,
+    "lng": -17.390071
+  },
+  {
     "name": "Ahmadou Waly Ndiaye (Sir Kane)",
     "city": "Dakar",
     "stack": [
