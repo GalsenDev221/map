@@ -1,5 +1,46 @@
 [
   {
+    "name": "Mouhamadou Moustapha Diagne",
+    "city": "Dakar",
+    "stack": [
+      "Go",
+      "Java",
+      "JavaScript",
+      "Php"
+    ],
+    "github": "https://github.com/Bakemono-san",
+    "lat": 14.7221588,
+    "lng": -17.4889547
+  },
+  {
+    "name": "Amadou Lamine NDIAYE (LvmzooDev23)",
+    "city": "Dakar",
+    "stack": [
+      "PHP",
+      "Laravel",
+      "Java",
+      "Javascript",
+      "Angular"
+    ],
+    "github": "https://github.com/LvmzooDev23",
+    "lat": 14.786574,
+    "lng": -17.311898
+  },
+  {
+    "name": "Mame Diarra Laye DJITE",
+    "city": "Dakar",
+    "stack": [
+      "React",
+      "Vue",
+      "TypeScript",
+      "Nuxt.js",
+      "laravel"
+    ],
+    "github": "https://github.com/MameDiarraLayeDjite",
+    "lat": 14.7771207,
+    "lng": -17.390071
+  },
+  {
     "name": "Alpha DIOP",
     "city": "Saint-Louis",
     "stack": [
@@ -110,32 +151,22 @@
     "lng": -17.3186875
   },
   {
-    "name": "Amadou Lamine NDIAYE (LvmzooDev23)",
+    "name": "Moctar Mamadou BA",
     "city": "Dakar",
     "stack": [
-      "PHP",
-      "Laravel",
-      "Java",
-      "Javascript",
-      "Angular"
-    ],
-    "github": "https://github.com/LvmzooDev23",
-    "lat": 14.786574,
-    "lng": -17.311898
-  },
-  {
-    "name": "Mame Diarra Laye DJITE",
-    "city": "Dakar",
-    "stack": [
-      "React",
-      "Vue",
+      "Python",
+      "JavaScript",
       "TypeScript",
-      "Nuxt.js",
-      "laravel"
+      "React Native",
+      "Firebase",
+      "Next.js",
+      "Node.js",
+      "Wordpress",
+      "Expo"
     ],
-    "github": "https://github.com/MameDiarraLayeDjite",
-    "lat": 14.7771207,
-    "lng": -17.390071
+    "github": "https://github.com/bmaxtar",
+    "lat": 14.69596,
+    "lng": -17.44798
   },
   {
     "name": "Ahmadou Waly Ndiaye (Sir Kane)",
