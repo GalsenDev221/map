@@ -72,7 +72,7 @@
     "name": "Latyr_fit_dev",
     "city": "Dakar",
     "stack": [
-      "Javascript",
+      "JavaScript",
       "TypeScript",
       "Docker",
       "Next.js",
@@ -89,7 +89,7 @@
       "PHP",
       "Laravel",
       "Java",
-      "Javascript",
+      "JavaScript",
       "Angular"
     ],
     "github": "https://github.com/LvmzooDev23",
@@ -103,8 +103,8 @@
       "React",
       "Vue",
       "TypeScript",
-      "Nuxt.js",
-      "laravel"
+      "Nuxt",
+      "Laravel"
     ],
     "github": "https://github.com/MameDiarraLayeDjite",
     "lat": 14.7771207,
@@ -114,12 +114,12 @@
     "name": "Ahmadou Waly Ndiaye (Sir Kane)",
     "city": "Dakar",
     "stack": [
-      "Javascript",
-      "Vuejs",
+      "JavaScript",
+      "Vue",
       "TypeScript",
       "Eleventy",
       "Astro",
-      "Nuxt.js",
+      "Nuxt",
       "PHP",
       "Symfony",
       "Laravel",
