@@ -46,6 +46,17 @@ export const stackIconMap: Record<string, StackIconConfig> = {
     title: "Svelte",
     svglUrl: `${SVGL_API_URL}/library/svelte.svg`,
   },
+  "Nuxt": {
+    title: "Nuxt",
+    svglUrl: `${SVGL_API_URL}/library/nuxt.svg`,
+  },
+  Astro: {
+    title: "Astro",
+    svglUrl: {
+      dark: `${SVGL_API_URL}/library/astro-icon-dark.svg`,
+      light: `${SVGL_API_URL}/library/astro-icon-light.svg`,
+    },
+  },
 
   // Backend Frameworks
   "Node.js": {
@@ -78,6 +89,10 @@ export const stackIconMap: Record<string, StackIconConfig> = {
     title: "Laravel",
     svglUrl: `${SVGL_API_URL}/library/laravel.svg`,
   },
+  "Spring Boot": {
+    title: "Spring Boot",
+    svglUrl: `${SVGL_API_URL}/library/spring.svg`,
+  },
 
   // Programming Languages
   JavaScript: {
@@ -109,6 +124,10 @@ export const stackIconMap: Record<string, StackIconConfig> = {
   Java: {
     title: "Java",
     svglUrl: `${SVGL_API_URL}/library/java.svg`,
+  },
+  Scala: {
+    title: "Scala",
+    svglUrl: `${SVGL_API_URL}/library/scala.svg`,
   },
   "C++": {
     title: "C++",

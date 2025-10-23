@@ -1,7 +1,7 @@
 {
   "name": "Mame Diarra Laye DJITE",
   "city": "Dakar",
-  "stack": ["React", "Vue", "TypeScript", "Nuxt.js", "laravel"],
+  "stack": ["React", "Vue", "TypeScript", "Nuxt", "Laravel"],
   "github": "https://github.com/MameDiarraLayeDjite",
   "lat": 14.7771207,
   "lng": -17.390071
