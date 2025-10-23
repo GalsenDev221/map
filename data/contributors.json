@@ -1,35 +1,5 @@
 [
   {
-    "name": "Maodo NDIAYE (49maodo)",
-    "city": "Dakar",
-    "stack": [
-      "Laravel",
-      "Asp.net Core",
-      "Nest.js",
-      "Next.js",
-      "React",
-      "Angular",
-      "React Native"
-    ],
-    "github": "https://github.com/49maodo",
-    "lat": 14.786501792316935,
-    "lng": -17.30954013411867
-  },
-  {
-    "name": "Alpha DIOP",
-    "city": "Saint-Louis",
-    "stack": [
-      "React",
-      "Rust",
-      "TypeScript",
-      "Next.js",
-      "Nest.js"
-    ],
-    "github": "https://github.com/alphajoop",
-    "lat": 16.064421,
-    "lng": -16.450517
-  },
-  {
     "name": "Mouhamadou Moustapha Diagne",
     "city": "Dakar",
     "stack": [
@@ -41,75 +11,6 @@
     "github": "https://github.com/Bakemono-san",
     "lat": 14.7221588,
     "lng": -17.4889547
-  },
-  {
-    "name": "Issakha CISSE",
-    "city": "Thiès",
-    "stack": [
-      "Nuxt",
-      "Laravel",
-      "Flutter",
-      "Spring Boot"
-    ],
-    "github": "https://github.com/cisse410",
-    "lat": 14.791539,
-    "lng": -16.925617
-  },
-  {
-    "name": "Daouda BA",
-    "city": "Dakar",
-    "stack": [
-      "React",
-      "Go",
-      "TypeScript",
-      "Next.js",
-      "Flutter"
-    ],
-    "github": "https://github.com/daoodaba975",
-    "lat": 14.7771207,
-    "lng": -17.390071
-  },
-  {
-    "name": "Abdallah Sow",
-    "city": "Lac-Rose",
-    "stack": [
-      "Python",
-      "Django",
-      "PHP",
-      "Laravel",
-      "C#"
-    ],
-    "github": "https://github.com/grandlay-e",
-    "lat": 14.830136,
-    "lng": -17.245986
-  },
-  {
-    "name": "Abdou KANDJI",
-    "city": "Thiès",
-    "stack": [
-      "Python",
-      "Angular",
-      "Node.js",
-      "Java",
-      "Scala"
-    ],
-    "github": "https://github.com/kandjiabdou",
-    "lat": 14.8074281,
-    "lng": -16.9051858
-  },
-  {
-    "name": "Latyr_fit_dev",
-    "city": "Dakar",
-    "stack": [
-      "Javascript",
-      "TypeScript",
-      "Docker",
-      "Next.js",
-      "Nest.js"
-    ],
-    "github": "https://github.com/latyr0503",
-    "lat": 14.7316875,
-    "lng": -17.3186875
   },
   {
     "name": "Amadou Lamine NDIAYE (LvmzooDev23)",
@@ -140,6 +41,81 @@
     "lng": -17.390071
   },
   {
+    "name": "Alpha DIOP",
+    "city": "Saint-Louis",
+    "stack": ["React", "Rust", "TypeScript", "Next.js", "Nest.js"],
+    "github": "https://github.com/alphajoop",
+    "lat": 16.064421,
+    "lng": -16.450517
+  },
+  {
+    "name": "Mouhamadou Moustapha Diagne",
+    "city": "Dakar",
+    "stack": [
+      "Go",
+      "Java",
+      "JavaScript",
+      "Php"
+    ],
+    "github": "https://github.com/Bakemono-san",
+    "lat": 14.7221588,
+    "lng": -17.4889547
+  },
+  {
+    "name": "Issakha CISSE",
+    "city": "Thiès",
+    "stack": ["Nuxt", "Laravel", "Flutter", "Spring Boot"],
+    "github": "https://github.com/cisse410",
+    "lat": 14.791539,
+    "lng": -16.925617
+  },
+  {
+    "name": "Daouda BA",
+    "city": "Dakar",
+    "stack": ["React", "Go", "TypeScript", "Next.js", "Flutter"],
+    "github": "https://github.com/daoodaba975",
+    "lat": 14.7771207,
+    "lng": -17.390071
+  },
+  {
+    "name": "Aliou DRAME",
+    "city": "Thiès",
+    "stack": [
+      "Laravel",
+      "Angular",
+      "Flutter",
+      "React",
+      ".NET"
+    ],
+    "github": "https://github.com/Drame-Kandji",
+    "lat": 14.791514077673106,
+    "lng": -16.926702223625153
+  },
+  {
+    "name": "Abdallah Sow",
+    "city": "Lac-Rose",
+    "stack": ["Python", "Django", "PHP", "Laravel", "C#"],
+    "github": "https://github.com/grandlay-e",
+    "lat": 14.830136,
+    "lng": -17.245986
+  },
+  {
+    "name": "Abdou KANDJI",
+    "city": "Thiès",
+    "stack": ["Python", "Angular", "Node.js", "Java", "Scala"],
+    "github": "https://github.com/kandjiabdou",
+    "lat": 14.8074281,
+    "lng": -16.9051858
+  },
+  {
+    "name": "Latyr_fit_dev",
+    "city": "Dakar",
+    "stack": ["Javascript", "TypeScript", "Docker", "Next.js", "Nest.js"],
+    "github": "https://github.com/latyr0503",
+    "lat": 14.7316875,
+    "lng": -17.3186875
+  },
+  {
     "name": "Ahmadou Waly Ndiaye (Sir Kane)",
     "city": "Dakar",
     "stack": [
@@ -157,5 +133,21 @@
     "github": "https://github.com/sir-kain",
     "lat": 14.6935,
     "lng": -17.448
+  },
+  {
+    "name": "Souleymane Diallo (sdley)",
+    "city": "Dakar",
+    "stack": [
+      "Java (Spring Boot, Spring MVC, Spring Webflux)",
+      "JavaScript (React/Next.js, Angular, Node.js)",
+      "TypeScript",
+      "Python (Pandas, Scikit-learn, Keras, TensorFlow)",
+      "Flutter",
+      "Kubernetes",
+      "Docker"
+    ],
+    "github": "https://github.com/sdley",
+    "lat": 14.74,
+    "lng": -17.51
   }
 ]
