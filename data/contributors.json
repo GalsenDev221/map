@@ -1,11 +1,65 @@
 [
   {
+    "name": "Mouhamadou Moustapha Diagne",
+    "city": "Dakar",
+    "stack": [
+      "Go",
+      "Java",
+      "JavaScript",
+      "Php"
+    ],
+    "github": "https://github.com/Bakemono-san",
+    "lat": 14.7221588,
+    "lng": -17.4889547
+  },
+  {
+    "name": "Amadou Lamine NDIAYE (LvmzooDev23)",
+    "city": "Dakar",
+    "stack": [
+      "PHP",
+      "Laravel",
+      "Java",
+      "Javascript",
+      "Angular"
+    ],
+    "github": "https://github.com/LvmzooDev23",
+    "lat": 14.786574,
+    "lng": -17.311898
+  },
+  {
+    "name": "Mame Diarra Laye DJITE",
+    "city": "Dakar",
+    "stack": [
+      "React",
+      "Vue",
+      "TypeScript",
+      "Nuxt.js",
+      "laravel"
+    ],
+    "github": "https://github.com/MameDiarraLayeDjite",
+    "lat": 14.7771207,
+    "lng": -17.390071
+  },
+  {
     "name": "Alpha DIOP",
     "city": "Saint-Louis",
     "stack": ["React", "Rust", "TypeScript", "Next.js", "Nest.js"],
     "github": "https://github.com/alphajoop",
     "lat": 16.064421,
     "lng": -16.450517
+  },
+  {
+    "name": "Mouhamadou Moustapha Diagne",
+    "city": "Dakar",
+    "stack": [
+      "Go",
+      "Java",
+      "JavaScript",
+      "Php"
+    ],
+    "github": "https://github.com/Bakemono-san",
+    "lat": 14.7221588,
+    "lng": -17.4889547
   },
   {
     "name": "Issakha CISSE",
@@ -22,6 +76,20 @@
     "github": "https://github.com/daoodaba975",
     "lat": 14.7771207,
     "lng": -17.390071
+  },
+  {
+    "name": "Aliou DRAME",
+    "city": "Thiès",
+    "stack": [
+      "Laravel",
+      "Angular",
+      "Flutter",
+      "React",
+      ".NET"
+    ],
+    "github": "https://github.com/Drame-Kandji",
+    "lat": 14.791514077673106,
+    "lng": -16.926702223625153
   },
   {
     "name": "Abdallah Sow",
@@ -46,22 +114,6 @@
     "github": "https://github.com/latyr0503",
     "lat": 14.7316875,
     "lng": -17.3186875
-  },
-  {
-    "name": "Amadou Lamine NDIAYE (LvmzooDev23)",
-    "city": "Dakar",
-    "stack": ["PHP", "Laravel", "Java", "Javascript", "Angular"],
-    "github": "https://github.com/LvmzooDev23",
-    "lat": 14.786574,
-    "lng": -17.311898
-  },
-  {
-    "name": "Mame Diarra Laye DJITE",
-    "city": "Dakar",
-    "stack": ["React", "Vue", "TypeScript", "Nuxt.js", "laravel"],
-    "github": "https://github.com/MameDiarraLayeDjite",
-    "lat": 14.7771207,
-    "lng": -17.390071
   },
   {
     "name": "Ahmadou Waly Ndiaye (Sir Kane)",
