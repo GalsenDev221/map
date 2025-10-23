@@ -20,7 +20,6 @@ const Map = dynamic(() => import("@/components/Map"), {
 });
 
 interface Contributor {
-  id: number;
   name: string;
   city: string;
   stack: string[];
@@ -159,6 +158,7 @@ export default function Home() {
           {/* Filter Bar */}
           <FilterBar
             contributors={contributorsData}
+            filteredContributors={filteredContributors}
             onFilterChange={setFilteredContributors}
           />
 

@@ -15,7 +15,6 @@ L.Icon.Default.mergeOptions({
 });
 
 interface Contributor {
-  id: number;
   name: string;
   city: string;
   stack: string[];
@@ -29,6 +28,9 @@ interface MapProps {
 }
 
 export default function Map({ contributors }: MapProps) {
+  // Get GitHub username from URL
+  const getGithubUsername = (url: string) => url.split("/").pop() || url;
+
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -62,7 +64,7 @@ export default function Map({ contributors }: MapProps) {
 
         {contributors.map((contributor) => (
           <Marker
-            key={contributor.id}
+            key={getGithubUsername(contributor.github)}
             position={[contributor.lat, contributor.lng]}
           >
             <Popup>

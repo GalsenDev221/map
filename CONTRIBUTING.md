@@ -86,16 +86,17 @@ cd map
 git checkout -b add-mon-profil
 ```
 
-### Étape 4 : Modifie `data/contributors.json`
+### Étape 4 : Crée un nouveau fichier JSON avec ton `username` GitHub dans le dossier `data/contributors`
 
-Ajoute tes informations à la fin du tableau :
+1. Ouvre le dossier `data` et va dans le dossier `contributors`
+2. Crée un nouveau fichier JSON avec ton username GitHub
+3. Ajoute tes informations le nouveau fichier en suivant ce format :
 
 ```json
 {
-  "id": 9,
-  "name": "Ton Nom Complet",
+  "name": "Ton Nom",
   "city": "Ta Ville",
-  "stack": ["JavaScript", "React", "Node.js"],
+  "stack": ["Techno 1", "Techno 2", "etc"],
   "github": "https://github.com/username",
   "lat": 14.xxxx,
   "lng": -17.xxxx
@@ -104,7 +105,6 @@ Ajoute tes informations à la fin du tableau :
 
 **Important** :
 
-- `id` : Utilise le prochain numéro disponible
 - `name` : Ton nom complet ou pseudo
 - `city` : Une ville au Sénégal (Dakar, Thiès, Saint-Louis, etc.)
 - `stack` : Un tableau de tes technologies principales (3-5 max)
@@ -133,7 +133,7 @@ Vérifie que ton profil s'affiche correctement sur la carte.
 ### Étape 6 : Commit et Push
 
 ```bash
-git add data/contributors.json
+git add data/contributors.json data/contributors/<ton-username>.json
 git commit -m "feat: add [Ton Nom] from [Ta Ville]"
 git push origin add-mon-profil
 ```
@@ -185,7 +185,7 @@ npm run lint
 
 Si tu as des questions, n'hésite pas à :
 
-- Ouvrir une [Discussion](https://github.com/GalsenDev221/map/discussions)
+- Ouvrir une [Issue](https://github.com/GalsenDev221/map/issues)
 - Rejoindre notre [Discord](https://discord.gg/CKZcKqf)
 - Contacter les mainteneurs
 

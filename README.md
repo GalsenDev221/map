@@ -59,15 +59,15 @@ Ouvre [http://localhost:3000](http://localhost:3000) dans ton navigateur.
 On accueille TOUTES les contributions avec plaisir !
 
 1. Fork ce repo
-2. Ouvre `data/contributors.json`
-3. Ajoute tes informations en suivant ce format :
+2. Ouvre le dossier `data` et va dans le dossier `contributors`
+3. Crée un nouveau fichier JSON avec ton username GitHub
+4. Ajoute tes informations le nouveau fichier en suivant ce format :
 
 ```json
 {
-  "id": 9,
   "name": "Ton Nom",
   "city": "Ta Ville",
-  "stack": ["React", "Node.js", "etc"],
+  "stack": ["Techno 1", "Techno 2", "etc"],
   "github": "https://github.com/username",
   "lat": 14.xxxx,
   "lng": -17.xxxx
@@ -84,8 +84,12 @@ Lis notre [Guide de Contribution](CONTRIBUTING.md) pour plus de détails.
 
 Un grand merci à tous ceux qui contribuent à ce projet ❤️
 
-<a href="https://github.com/GalsenDev221/map/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=GalsenDev221/map" />
+<a href="https://www.star-history.com/#GalsenDev221/map&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=GalsenDev221/map&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=GalsenDev221/map&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=GalsenDev221/map&type=date&legend=top-left" />
+ </picture>
 </a>
 
 ## 📜 License
