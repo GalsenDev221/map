@@ -1,0 +1,16 @@
+{
+  "name": "Souleymane Diallo (sdley)",
+  "city": "Dakar",
+  "stack": [
+    "Java (Spring Boot, Spring MVC, Spring Webflux)",
+    "JavaScript (React/Next.js, Angular, Node.js)",
+    "TypeScript",
+    "Python (Pandas, Scikit-learn, Keras, TensorFlow)",
+    "Flutter",
+    "Kubernetes",
+    "Docker"
+  ],
+  "github": "https://github.com/sdley",
+  "lat": 14.74,
+  "lng": -17.51
+}
