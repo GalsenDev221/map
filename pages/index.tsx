@@ -158,6 +158,7 @@ export default function Home() {
           {/* Filter Bar */}
           <FilterBar
             contributors={contributorsData}
+            filteredContributors={filteredContributors}
             onFilterChange={setFilteredContributors}
           />
 
