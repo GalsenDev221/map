@@ -39,3 +39,6 @@ next-env.d.ts
 *.swp
 *.swo
 *~
+
+# Map data files
+data/contributors.json
