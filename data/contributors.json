@@ -149,5 +149,13 @@
     "github": "https://github.com/sdley",
     "lat": 14.74,
     "lng": -17.51
+  },
+  {
+    "name": "Asse Badiane (ReddingCode)",
+    "city": "Dakar",
+    "stack": ["Java", "Python", "TypeScript", "Angular", "React", "NodeJS", "Spring Boot", "Django", "Flask", "Flutter", "Laravel", "Express", "Docker"],
+    "github": "https://github.com/asseBadiane",
+    "lat": 14.7690,
+    "lng": -17.3647
   }
 ]
