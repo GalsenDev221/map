@@ -2,10 +2,13 @@
   "name": "Souleymane Diallo (sdley)",
   "city": "Dakar",
   "stack": [
-    "Java (Spring Boot, Spring MVC, Spring Webflux)",
-    "JavaScript (React/Next.js, Angular, Node.js)",
+    "Java",
+    "JavaScript",
+    "Node.js",
+    "React",
+    "Angular",
     "TypeScript",
-    "Python (Pandas, Scikit-learn, Keras, TensorFlow)",
+    "Python",
     "Flutter",
     "Kubernetes",
     "Docker"
