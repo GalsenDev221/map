@@ -1,16 +1,16 @@
 {
-    "name": "Ben Hattab Mahdi",
-    "city": "Dakar",
-    "stack": [
-        "React",
-        "Next.js",
-        "Laravel",
-        "Node.js",
-        "Flutter",
-        "Docker",
-        "Express.js"
-    ],
-    "github": "https://github.com/crossben",
-    "lat": 14.6937,
-    "lng": -17.4441
+  "name": "Ben Hattab Mahdi",
+  "city": "Dakar",
+  "stack": [
+    "React",
+    "Next.js",
+    "Laravel",
+    "Node.js",
+    "Flutter",
+    "Docker",
+    "Express.js"
+  ],
+  "github": "https://github.com/crossben",
+  "lat": 14.6937,
+  "lng": -17.4441
 }
