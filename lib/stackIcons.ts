@@ -46,7 +46,7 @@ export const stackIconMap: Record<string, StackIconConfig> = {
     title: "Svelte",
     svglUrl: `${SVGL_API_URL}/library/svelte.svg`,
   },
-  "Nuxt": {
+  Nuxt: {
     title: "Nuxt",
     svglUrl: `${SVGL_API_URL}/library/nuxt.svg`,
   },
@@ -70,8 +70,8 @@ export const stackIconMap: Record<string, StackIconConfig> = {
   Express: {
     title: "Express.js",
     svglUrl: {
-      dark: `${SVGL_API_URL}/library/expressjs.svg`,
-      light: `${SVGL_API_URL}/library/expressjs_dark.svg`,
+      dark: `${SVGL_API_URL}/library/expressjs_dark.svg`,
+      light: `${SVGL_API_URL}/library/expressjs.svg`,
     },
   },
   Django: {
@@ -224,6 +224,46 @@ export const stackIconMap: Record<string, StackIconConfig> = {
   Bootstrap: {
     title: "Bootstrap",
     svglUrl: `${SVGL_API_URL}/library/bootstrap.svg`,
+  },
+
+  // CMS
+  WordPress: {
+    title: "WordPress",
+    svglUrl: `${SVGL_API_URL}/library/wordpress.svg`,
+  },
+  Sanity: {
+    title: "Sanity",
+    svglUrl: {
+      dark: `${SVGL_API_URL}/library/sanity-dark.svg`,
+      light: `${SVGL_API_URL}/library/sanity-light.svg`,
+    },
+  },
+  Strapi: {
+    title: "Strapi",
+    svglUrl: `${SVGL_API_URL}/library/strapi.svg`,
+  },
+  Shopify: {
+    title: "Shopify",
+    svglUrl: `${SVGL_API_URL}/library/shopify.svg`,
+  },
+  Payload: {
+    title: "Payload CMS",
+    svglUrl: {
+      dark: `${SVGL_API_URL}/library/payload_dark.svg`,
+      light: `${SVGL_API_URL}/library/payload.svg`,
+    },
+  },
+  Tina: {
+    title: "Tina",
+    svglUrl: `${SVGL_API_URL}/library/tina.svg`,
+  },
+  Webflow: {
+    title: "Webflow",
+    svglUrl: `${SVGL_API_URL}/library/webflow.svg`,
+  },
+  Storyblok: {
+    title: "Storyblok",
+    svglUrl: `${SVGL_API_URL}/library/storyblok.svg`,
   },
 };
 
