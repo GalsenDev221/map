@@ -1,4 +1,5 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
+import { matchesSearch } from "@/utils/filterUtils";
 
 interface Contributor {
   name: string;
@@ -20,6 +21,7 @@ export default function FilterBar({
 }: FilterBarProps) {
   const [selectedCity, setSelectedCity] = useState<string>("all");
   const [selectedStack, setSelectedStack] = useState<string>("all");
+  const [searchTerm, setSearchTerm] = useState<string>("");
 
   // Extract cities and stacks
   const cities = useMemo(() => {
@@ -32,7 +34,7 @@ export default function FilterBar({
     return ["all", ...Array.from(stackSet).sort()];
   }, [contributors]);
 
-  const applyFilters = (city: string, stack: string) => {
+  const applyFilters = (city: string, stack: string, term: string) => {
     let filtered = contributors;
 
     if (city !== "all") {
@@ -42,23 +44,32 @@ export default function FilterBar({
     if (stack !== "all") {
       filtered = filtered.filter((c) => c.stack.includes(stack));
     }
-
+    if (term.trim() !== "") {
+      filtered = filtered.filter((c) => matchesSearch(term, c));
+    }
     onFilterChange(filtered);
   };
 
+  useEffect(() => {
+    applyFilters(selectedCity, selectedStack, searchTerm);
+  }, [selectedCity, selectedStack, searchTerm]);
+
   const handleCityChange = (city: string) => {
     setSelectedCity(city);
-    applyFilters(city, selectedStack);
+    applyFilters(city, selectedStack, searchTerm);
   };
 
   const handleStackChange = (stack: string) => {
     setSelectedStack(stack);
-    applyFilters(selectedCity, stack);
+    applyFilters(selectedCity, stack, searchTerm);
   };
+
+  const handleSearchChange = (term: string) => setSearchTerm(term);
 
   const resetFilters = () => {
     setSelectedCity("all");
     setSelectedStack("all");
+    setSearchTerm("");
     onFilterChange(contributors);
   };
 
@@ -89,7 +100,7 @@ export default function FilterBar({
         </button>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {/* Filter by city */}
         <div>
           <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
@@ -126,7 +137,63 @@ export default function FilterBar({
           </select>
         </div>
       </div>
+      {/* Barre de recherche */}
+      <div className="mt-6 md:col-span-3">
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+          Rechercher un contributeur
+        </label>
+        <div className="relative">
+          <span className="absolute inset-y-0 left-4 flex items-center text-gray-400 dark:text-gray-500 pointer-events-none">
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </span>
 
+          <input
+            type="text"
+            value={searchTerm}
+            onChange={(e) => handleSearchChange(e.target.value)}
+            placeholder="Ex : Fatou, MoussaDev, @github..."
+            className="w-full pl-11 pr-5 py-3 text-[15px] bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-xl shadow-sm focus:ring-2 focus:ring-senegal-green focus:border-transparent text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 transition-all duration-200"
+          />
+
+          {searchTerm && (
+            <button
+              onClick={() => setSearchTerm("")}
+              className="absolute inset-y-0 right-3 flex items-center text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+              aria-label="Effacer la recherche"
+            >
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          )}
+        </div>
+
+        <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">
+          Vous pouvez rechercher par nom, pseudo GitHub ou adresse complète.
+        </p>
+      </div>
       {/* Stats Bar */}
       <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
         <p className="text-sm text-gray-600 dark:text-gray-400">
