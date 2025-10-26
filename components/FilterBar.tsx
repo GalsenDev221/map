@@ -68,6 +68,9 @@ export default function FilterBar({
     setSearchTerm("");
   };
 
+  // Check if any filters are active
+  const hasActiveFilters = selectedCity !== "all" || selectedStack !== "all" || searchTerm.trim() !== "";
+
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">
       <div className="flex items-center justify-between mb-4">
@@ -87,12 +90,14 @@ export default function FilterBar({
           </svg>
           Filtres
         </h2>
-        <button
-          onClick={resetFilters}
-          className="text-sm text-senegal-green hover:text-senegal-green/80 font-medium transition-colors"
-        >
-          Réinitialiser
-        </button>
+        {hasActiveFilters && (
+          <button
+            onClick={resetFilters}
+            className="text-sm text-senegal-green hover:text-senegal-green/80 font-medium transition-colors"
+          >
+            Réinitialiser
+          </button>
+        )}
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
