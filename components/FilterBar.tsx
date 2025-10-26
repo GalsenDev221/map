@@ -1,4 +1,5 @@
 import { useState, useMemo, useEffect } from "react";
+import { matchesSearch } from "@/utils/filterUtils";
 
 interface Contributor {
   name: string;
@@ -11,13 +12,12 @@ interface Contributor {
 
 interface FilterBarProps {
   contributors: Contributor[];
-  filteredContributors: Contributor[];
+   filteredContributors: Contributor[];
   onFilterChange: (filtered: Contributor[]) => void;
 }
 
 export default function FilterBar({
   contributors,
-  filteredContributors,
   onFilterChange,
 }: FilterBarProps) {
   const [selectedCity, setSelectedCity] = useState<string>("all");
@@ -35,37 +35,43 @@ export default function FilterBar({
     return ["all", ...Array.from(stackSet).sort()];
   }, [contributors]);
 
+  const applyFilters = (city: string, stack: string, term: string) => {
+    let filtered = contributors;
+
+    if (city !== "all") {
+      filtered = filtered.filter((c) => c.city === city);
+    }
+
+    if (stack !== "all") {
+      filtered = filtered.filter((c) => c.stack.includes(stack));
+    }
+    if (term.trim() !== "") {
+      filtered = filtered.filter((c) => matchesSearch(term, c));
+    }
+    onFilterChange(filtered);
+  };
+
   useEffect(() => {
-    const applyFilters = () => {
-      let filtered = contributors;
+    applyFilters(selectedCity, selectedStack, searchTerm);
+  }, [selectedCity, selectedStack, searchTerm]);
 
-      // Filter by city
-      if (selectedCity !== "all") {
-        filtered = filtered.filter((c) => c.city === selectedCity);
-      }
+  const handleCityChange = (city: string) => {
+    setSelectedCity(city);
+    applyFilters(city, selectedStack, searchTerm);
+  };
 
-      // Filter by stack
-      if (selectedStack !== "all") {
-        filtered = filtered.filter((c) => c.stack.includes(selectedStack));
-      }
+  const handleStackChange = (stack: string) => {
+    setSelectedStack(stack);
+    applyFilters(selectedCity, stack, searchTerm);
+  };
 
-      // Filter by search term
-      if (searchTerm.trim() !== "") {
-        filtered = filtered.filter((c) =>
-          c.name.toLowerCase().includes(searchTerm.toLowerCase())
-        );
-      }
-
-      onFilterChange(filtered);
-    };
-
-    applyFilters();
-  }, [selectedCity, selectedStack, searchTerm, contributors, onFilterChange]);
+  const handleSearchChange = (term: string) => setSearchTerm(term);
 
   const resetFilters = () => {
     setSelectedCity("all");
     setSelectedStack("all");
     setSearchTerm("");
+    onFilterChange(contributors);
   };
 
   // Check if any filters are active
@@ -101,36 +107,14 @@ export default function FilterBar({
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {/* Search by name or github username */}
-        <div>
-          <label
-            htmlFor="search"
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-          >
-            Nom / Pseudo GitHub
-          </label>
-          <input
-            type="text"
-            id="search"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            placeholder="Rechercher un nom ou un pseudo GitHub ..."
-            className="w-full px-4 py-2 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-senegal-green focus:border-transparent text-gray-900 dark:text-white"
-          />
-        </div>
-
         {/* Filter by city */}
         <div>
-          <label
-            htmlFor="city-filter"
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-          >
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
             Ville
           </label>
           <select
-            id="city-filter"
             value={selectedCity}
-            onChange={(e) => setSelectedCity(e.target.value)}
+            onChange={(e) => handleCityChange(e.target.value)}
             className="w-full px-4 py-2 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-senegal-green focus:border-transparent text-gray-900 dark:text-white"
           >
             {cities.map((city) => (
@@ -143,16 +127,12 @@ export default function FilterBar({
 
         {/* Filter by stack */}
         <div>
-          <label
-            htmlFor="stack-filter"
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-          >
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
             Stack / Technologie
           </label>
           <select
-            id="stack-filter"
             value={selectedStack}
-            onChange={(e) => setSelectedStack(e.target.value)}
+            onChange={(e) => handleStackChange(e.target.value)}
             className="w-full px-4 py-2 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-senegal-green focus:border-transparent text-gray-900 dark:text-white"
           >
             {stacks.map((stack) => (
@@ -163,22 +143,72 @@ export default function FilterBar({
           </select>
         </div>
       </div>
+      {/* Barre de recherche */}
+      <div className="mt-6 md:col-span-3">
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+          Rechercher un contributeur
+        </label>
+        <div className="relative">
+          <span className="absolute inset-y-0 left-4 flex items-center text-gray-400 dark:text-gray-500 pointer-events-none">
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </span>
 
+          <input
+            type="text"
+            value={searchTerm}
+            onChange={(e) => handleSearchChange(e.target.value)}
+            placeholder="Ex : Fatou, MoussaDev, @github..."
+            className="w-full pl-11 pr-5 py-3 text-[15px] bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-xl shadow-sm focus:ring-2 focus:ring-senegal-green focus:border-transparent text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 transition-all duration-200"
+          />
+
+          {searchTerm && (
+            <button
+              onClick={() => setSearchTerm("")}
+              className="absolute inset-y-0 right-3 flex items-center text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+              aria-label="Effacer la recherche"
+            >
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          )}
+        </div>
+
+        <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">
+          Vous pouvez rechercher par nom, pseudo GitHub ou adresse complète.
+        </p>
+      </div>
       {/* Stats Bar */}
       <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
-        {filteredContributors.length > 0 ? (
-          <p className="text-sm text-gray-600 dark:text-gray-400">
-            <span className="font-semibold text-gray-900 dark:text-white">
-              {filteredContributors.length}
-            </span>{" "}
-            contributeur{filteredContributors.length > 1 ? "s" : ""} trouvé
-            {filteredContributors.length > 1 ? "s" : ""}
-          </p>
-        ) : (
-          <p className="text-sm text-gray-500 dark:text-gray-400">
-            Aucun résultat trouvé.
-          </p>
-        )}
+        <p className="text-sm text-gray-600 dark:text-gray-400">
+          <span className="font-semibold text-gray-900 dark:text-white">
+            {contributors.length}
+          </span>{" "}
+          contributeur{contributors.length > 1 ? "s" : ""} affiché
+          {contributors.length > 1 ? "s" : ""}
+        </p>
       </div>
     </div>
   );
