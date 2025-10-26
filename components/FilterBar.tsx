@@ -12,6 +12,7 @@ interface Contributor {
 
 interface FilterBarProps {
   contributors: Contributor[];
+   filteredContributors: Contributor[];
   onFilterChange: (filtered: Contributor[]) => void;
 }
 
