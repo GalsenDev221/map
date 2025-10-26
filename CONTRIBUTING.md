@@ -133,10 +133,12 @@ Vérifie que ton profil s'affiche correctement sur la carte.
 ### Étape 6 : Commit et Push
 
 ```bash
-git add data/contributors.json data/contributors/<ton-username>.json
+git add data/contributors/<ton-username>.json
 git commit -m "feat: add [Ton Nom] from [Ta Ville]"
 git push origin add-mon-profil
 ```
+
+Le fichier `data/contributors.json` (qui regroupe tout les profils) est généré automatiquement quand on lance la commande `npm run`, il n'est donc pas nécessaire de le commiter.
 
 ### Étape 7 : Crée une Pull Request
 

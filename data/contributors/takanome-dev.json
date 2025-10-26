@@ -1,0 +1,17 @@
+{
+  "name": "El Hadji Malick Seck",
+  "city": "Dakar",
+  "stack": [
+    "JavaScript",
+    "TypeScript",
+    "Docker",
+    "Next.js",
+    "Nest.js",
+    "React Native",
+    "Go",
+    "PostgreSQL"
+  ],
+  "github": "https://github.com/takanome-dev",
+  "lat": 14.762332,
+  "lng": -17.346396
+}

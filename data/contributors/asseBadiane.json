@@ -1,0 +1,22 @@
+{
+  "name": "Asse Badiane (ReddingCode)",
+  "city": "Dakar",
+  "stack": [
+    "Java",
+    "Python",
+    "TypeScript",
+    "Angular",
+    "React",
+    "NodeJS",
+    "Spring Boot",
+    "Django",
+    "Flask",
+    "Flutter",
+    "Laravel",
+    "Express",
+    "Docker"
+  ],
+  "github": "https://github.com/asseBadiane",
+  "lat": 14.769,
+  "lng": -17.3647
+}
