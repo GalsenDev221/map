@@ -1,0 +1,16 @@
+{
+        "name": "Cherif Diouf",
+        "city": "Dakar",
+        "stack": [
+                "Laravel",
+                "React",
+                "Express.js",
+                "Spring Boot",
+                "Flutter",
+                "Angular",
+                "FastAPI"
+        ],
+        "github": "https://github.com/Maximus203",
+        "lat": 14.773255913631244,
+        "lng": -17.316812223376427
+}
