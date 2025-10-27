@@ -56,7 +56,7 @@ export default function ContributorCard({ contributor }: ContributorCardProps) {
         <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">
           Stack
         </p>
-        <div className="flex flex-wrap gap-1">
+        <div className="flex flex-wrap gap-1 max-h-48 overflow-y-auto">
           {contributor.stack.map((tech, index) => (
             <div
               key={index}
