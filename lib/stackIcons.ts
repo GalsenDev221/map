@@ -129,6 +129,10 @@ export const stackIconMap: Record<string, StackIconConfig> = {
     title: "Scala",
     svglUrl: `${SVGL_API_URL}/library/scala.svg`,
   },
+  C: {
+    title: "C",
+    svglUrl: `${SVGL_API_URL}/library/c.svg`,
+  },
   "C++": {
     title: "C++",
     svglUrl: `${SVGL_API_URL}/library/c-plusplus.svg`,
@@ -147,6 +151,10 @@ export const stackIconMap: Record<string, StackIconConfig> = {
   Ruby: {
     title: "Ruby",
     svglUrl: `${SVGL_API_URL}/library/ruby.svg`,
+  },
+  Terraform: {
+    title: "Terraform",
+    svglUrl: `${SVGL_API_URL}/library/terraform.svg`,
   },
 
   // Mobile
@@ -168,6 +176,10 @@ export const stackIconMap: Record<string, StackIconConfig> = {
   Swift: {
     title: "Swift",
     svglUrl: `${SVGL_API_URL}/library/swift.svg`,
+  },
+  Expo: {
+    title: "Expo",
+    svglUrl: `${SVGL_API_URL}/library/expo.svg`,
   },
 
   // DevOps & Cloud
