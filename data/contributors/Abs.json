@@ -1,7 +1,16 @@
 {
   "name": "Alioune Badara Sougou",
   "city": "Guédiawaye",
-  "stack": ["JavaScript", "React", "Node.js","Express.js", "MySQL", "Tailwind CSS", "Flask","Laravel"],
+  "stack": [
+    "JavaScript",
+    "React",
+    "Node.js",
+    "Express.js",
+    "MySQL",
+    "Tailwind CSS",
+    "Flask",
+    "Laravel"
+  ],
   "github": "https://github.com/AliouneBadaraSougou",
   "lat": 14.789257,
   "lng": -17.369723

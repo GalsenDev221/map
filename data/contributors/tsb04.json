@@ -2,43 +2,17 @@
   "name": "Thierno Sadou BARRY",
   "city": "Dakar",
   "stack": [
-    "C",
-    "C++",
-    "C#",
     "Java",
     "JavaScript",
-    "TypeScript",
     "Python",
     "Go",
-    "PHP",
-
     "React",
-    "Next.js",
-    "Vue",
     "Angular",
-
     "Nest.js",
-    "Node.js",
-    "Express",
     "Django",
-    "Flask",
-    "Laravel",
-    "Spring Boot",
-
-    "Expo",
     "React Native",
     "Flutter",
-    "Kotlin",
-    "Swift",
-
-    "Docker",
-    "Terraform",
-    "AWS",
-    "Azure",
-
-    "MongoDB",
-    "PostgreSQL",
-    "MySQL"
+    "Docker"
   ],
   "github": "https://github.com/tsb04",
   "lat": 14.775982,
