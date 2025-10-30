@@ -1,7 +1,15 @@
 {
   "name": "Lassana Siby",
   "city": "Pikine",
-  "stack": ["Python", "Java", "Django","Spring Boot", "MySQL", "Tailwind CSS", "Angular"],
+  "stack": [
+    "Python",
+    "Java",
+    "Django",
+    "Spring Boot",
+    "MySQL",
+    "Tailwind CSS",
+    "Angular"
+  ],
   "github": "https://github.com/sibylassana95",
   "lat": 14.757175646964093,
   "lng": -17.397833675399674

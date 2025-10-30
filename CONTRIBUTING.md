@@ -115,6 +115,7 @@ git checkout -b add-mon-profil
 
 - **NE METS JAMAIS** tes coordonnées exactes (ton domicile, ton lieu de travail)
 - Utilise **UNIQUEMENT** les coordonnées du centre-ville ou d'un point public connu de ta ville
+- Ne pas **UTILISER** les coordonnées (lat & lng) d'un autre contributeur.
 
 ### Étape 5 : Teste localement
 

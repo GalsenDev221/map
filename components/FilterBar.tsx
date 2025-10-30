@@ -12,12 +12,13 @@ interface Contributor {
 
 interface FilterBarProps {
   contributors: Contributor[];
-   filteredContributors: Contributor[];
+  filteredContributors: Contributor[];
   onFilterChange: (filtered: Contributor[]) => void;
 }
 
 export default function FilterBar({
   contributors,
+  filteredContributors,
   onFilterChange,
 }: FilterBarProps) {
   const [selectedCity, setSelectedCity] = useState<string>("all");
@@ -75,7 +76,10 @@ export default function FilterBar({
   };
 
   // Check if any filters are active
-  const hasActiveFilters = selectedCity !== "all" || selectedStack !== "all" || searchTerm.trim() !== "";
+  const hasActiveFilters =
+    selectedCity !== "all" ||
+    selectedStack !== "all" ||
+    searchTerm.trim() !== "";
 
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">
@@ -107,6 +111,63 @@ export default function FilterBar({
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {/* Search bar */}
+        <div>
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+            Rechercher un contributeur
+          </label>
+          <div className="relative">
+            <span className="absolute inset-y-0 left-4 flex items-center text-gray-400 dark:text-gray-500 pointer-events-none">
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </span>
+
+            <input
+              type="text"
+              value={searchTerm}
+              onChange={(e) => handleSearchChange(e.target.value)}
+              placeholder="Ex : Fatou, MoussaDev, @github..."
+              className="w-full pl-10 px-4 py-2 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-senegal-green focus:border-transparent text-gray-900 dark:text-white"
+            />
+
+            {searchTerm && (
+              <button
+                onClick={() => setSearchTerm("")}
+                className="absolute inset-y-0 right-3 flex items-center text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+                aria-label="Effacer la recherche"
+              >
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            )}
+          </div>
+
+          <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">
+            Vous pouvez rechercher par nom, pseudo GitHub ou adresse complète.
+          </p>
+        </div>
         {/* Filter by city */}
         <div>
           <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
@@ -143,71 +204,15 @@ export default function FilterBar({
           </select>
         </div>
       </div>
-      {/* Barre de recherche */}
-      <div className="mt-6 md:col-span-3">
-        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-          Rechercher un contributeur
-        </label>
-        <div className="relative">
-          <span className="absolute inset-y-0 left-4 flex items-center text-gray-400 dark:text-gray-500 pointer-events-none">
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
-          </span>
 
-          <input
-            type="text"
-            value={searchTerm}
-            onChange={(e) => handleSearchChange(e.target.value)}
-            placeholder="Ex : Fatou, MoussaDev, @github..."
-            className="w-full pl-11 pr-5 py-3 text-[15px] bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-xl shadow-sm focus:ring-2 focus:ring-senegal-green focus:border-transparent text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 transition-all duration-200"
-          />
-
-          {searchTerm && (
-            <button
-              onClick={() => setSearchTerm("")}
-              className="absolute inset-y-0 right-3 flex items-center text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
-              aria-label="Effacer la recherche"
-            >
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-          )}
-        </div>
-
-        <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">
-          Vous pouvez rechercher par nom, pseudo GitHub ou adresse complète.
-        </p>
-      </div>
       {/* Stats Bar */}
       <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
         <p className="text-sm text-gray-600 dark:text-gray-400">
           <span className="font-semibold text-gray-900 dark:text-white">
-            {contributors.length}
+            {filteredContributors.length}
           </span>{" "}
-          contributeur{contributors.length > 1 ? "s" : ""} affiché
-          {contributors.length > 1 ? "s" : ""}
+          contributeur{filteredContributors.length > 1 ? "s" : ""} affiché
+          {filteredContributors.length > 1 ? "s" : ""}
         </p>
       </div>
     </div>

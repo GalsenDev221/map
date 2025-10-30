@@ -1,13 +1,7 @@
 {
   "name": "Ibrahima FADIABA (papsoking)",
   "city": "Dakar",
-  "stack": [
-    "PHP",
-    "React",
-    "Node.js",
-    "Express",
-    "Flask"
-  ],
+  "stack": ["PHP", "React", "Node.js", "Express", "Flask"],
   "github": "https://github.com/papsoking",
   "lat": 14.786501713411867,
   "lng": -17.30954092316935
