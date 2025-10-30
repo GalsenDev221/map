@@ -1,6 +1,7 @@
 import StackIcon from "./StackIcon";
 
 interface Contributor {
+  avatar?: string;
   name: string;
   city: string;
   stack: string[];
@@ -14,14 +15,19 @@ interface ContributorCardProps {
 }
 
 export default function ContributorCard({ contributor }: ContributorCardProps) {
+
+  // GitHub Username
+  function getGitHubUsername(url: string): string | null {
+    const match = url.match(/github\.com\/([^/?#]+)/);
+    return match ? match[1] : null;
+  }
+  const username = getGitHubUsername(contributor.github);
+
   return (
     <div className="p-4 min-w-[250px]">
       <div className="flex items-center gap-3 mb-3">
-        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-senegal-green to-senegal-yellow flex items-center justify-center text-white font-bold text-lg">
-          {contributor.name
-            .split(" ")
-            .map((n) => n[0])
-            .join("")}
+        <div className="w-14 h-14">
+          <img className="rounded-full" src={`https://github.com/${username}.png`} alt="GitHub Avatar" />
         </div>
         <div>
           <h3 className="font-bold text-lg text-gray-900">
