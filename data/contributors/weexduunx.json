@@ -3,18 +3,10 @@
   "city": "Dakar",
   "stack": [
     "PHP",
-    "JavaScript",
     "Expo Go",
     "React",
-    "Angular",
     "Laravel",
-    "Livewire",
-    "React Native",
-    "Alpine JS",
-    "Docker",
-    "PostgreSQL",
-    "MySQL",
-    "SQLite"
+    "Livewire"
   ],
   "github": "https://github.com/weexduunx",
   "lat": 14.801846,
