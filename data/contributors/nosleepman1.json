@@ -1,7 +1,15 @@
 {
   "name": "Abdallah DIOUF",
   "city": "Keur Massar",
-  "stack": ["MERN stack", "Python", "Laravel", "Typescript", "Flutter"],
+  "stack": [
+      "TypeScript",
+      "Python",
+      "Nest.js",  
+      "Laravel", 
+      "React.js",
+      "Next.js",  
+      "Flutter", 
+      "React Native"],
   "github": "https://github.com/nosleepman1",
   "lat": 14.77305 ,
   "lng":  -17.316826
