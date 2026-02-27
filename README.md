@@ -4,7 +4,7 @@ Où sont les devs aux Sénégal ?
 
 ![Galsen DEV Map](screenshots/preview.png)
 
-## 🎯 À propos
+## À propos
 
 **Galsen DEV Map** est un projet open source qui vise à cartographier et connecter la communauté tech sénégalaise.
 
@@ -15,7 +15,7 @@ Où sont les devs aux Sénégal ?
 - **Représentation** : Montrer que la tech au Sénégal ne se limite pas à Dakar
 - **Inspiration** : Inspirer la prochaine génération de développeurs
 
-## ✨ Fonctionnalités
+## Fonctionnalités
 
 - Carte interactive avec Leaflet
 - Filtres par ville et par stack technique
@@ -24,14 +24,14 @@ Où sont les devs aux Sénégal ?
 - Interface responsive
 - Performance optimale avec Next.js
 
-## 🛠️ Stack Technique
+## Stack Technique
 
 - **Framework** : Next.js 14 + TypeScript
 - **Styling** : TailwindCSS
 - **Carte** : React Leaflet
 - **Déploiement** : Netlify
 
-## 🚀 Installation & Lancement
+## Installation & Lancement
 
 ### Prérequis
 
@@ -54,7 +54,7 @@ npm run dev
 
 Ouvre [http://localhost:3000](http://localhost:3000) dans ton navigateur.
 
-## 🫱🏾‍🫲🏾 Comment Contribuer
+## Comment Contribuer
 
 On accueille TOUTES les contributions avec plaisir !
 
@@ -94,6 +94,6 @@ Un grand merci à tous ceux qui contribuent à ce projet ❤️
  </picture>
 </a>
 
-## 📜 License
+## License
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+Ce projet est sous licence [MIT](LICENSE).

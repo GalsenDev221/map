@@ -3,7 +3,7 @@
 Merci de ton intérêt pour **Galsen DEV Map** !  
 Ce guide va t'aider à contribuer au projet de manière efficace.
 
-## 📋 Table des Matières
+## Table des Matières
 
 - [Comment puis-je contribuer](#comment-puis-je-contribuer)
 - [Sécurité & Vie Privée](#sécurité--vie-privée)
