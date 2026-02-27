@@ -77,7 +77,7 @@ export default function Map({ contributors }: MapProps) {
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-[1000] bg-gradient-to-br from-white/85 to-gray-100/70 dark:from-gray-900/80 dark:to-gray-800/70 backdrop-blur-md animate-fadeIn">
           {/* Icône illustrative */}
           <svg
-            className="w-16 h-16 text-senegal-yellow mb-5 opacity-90 drop-shadow-md"
+            className="w-16 h-16 text-galsendev-blue mb-5 opacity-90 drop-shadow-md"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -103,7 +103,7 @@ export default function Map({ contributors }: MapProps) {
           {/* Bouton d’action */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-senegal-green text-white font-medium rounded-lg shadow-md hover:bg-senegal-green/90 hover:scale-[1.02] transition-transform duration-200"
+            className="inline-flex items-center gap-2 px-5 py-2.5 bg-galsendev-blue text-white font-medium rounded-lg shadow-md hover:bg-galsendev-blue/90 hover:scale-[1.02] transition-transform duration-200"
           >
             <svg
               className="w-5 h-5"

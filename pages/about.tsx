@@ -1,6 +1,6 @@
 import Link from "next/link";
-
 import Header from "@/components/Header";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export default function About() {
@@ -12,30 +12,7 @@ export default function About() {
       />
 
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-        {/* Header */}
-        <header className="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
-          <nav className="container mx-auto px-4 py-4">
-            <div className="flex items-center justify-between">
-              <Link
-                href="/"
-                className="flex items-center gap-3 hover:opacity-80 transition-opacity"
-              >
-                <div>
-                  <h1 className="text-xl font-bold text-gray-900 dark:text-white">
-                    Galsen DEV Map
-                  </h1>
-                </div>
-              </Link>
-
-              <Link
-                href="/"
-                className="text-gray-600 dark:text-gray-300 hover:text-senegal-green dark:hover:text-senegal-yellow transition-colors font-medium"
-              >
-                ← Retour à la carte
-              </Link>
-            </div>
-          </nav>
-        </header>
+        <Navbar />
 
         {/* Main Content */}
         <main className="container mx-auto px-4 py-12 max-w-4xl">
@@ -54,9 +31,9 @@ export default function About() {
             {/* Mission */}
             <section className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-8">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-senegal-green/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-galsendev-blue/10 rounded-lg flex items-center justify-center flex-shrink-0">
                   <svg
-                    className="w-6 h-6 text-senegal-green"
+                    className="w-6 h-6 text-galsendev-blue"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -89,9 +66,9 @@ export default function About() {
             {/* What is it */}
             <section className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-8">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-senegal-yellow/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-galsendev-blue/10 rounded-lg flex items-center justify-center flex-shrink-0">
                   <svg
-                    className="w-6 h-6 text-senegal-yellow"
+                    className="w-6 h-6 text-galsendev-blue"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -116,21 +93,21 @@ export default function About() {
                   </p>
                   <ul className="space-y-2 text-gray-600 dark:text-gray-400">
                     <li className="flex items-start gap-2">
-                      <span className="text-senegal-green mt-1">✓</span>
+                      <span className="text-galsendev-blue mt-1">✓</span>
                       <span>
                         Découvre les devs de ta région ou d'ailleurs au Sénégal
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-senegal-green mt-1">✓</span>
+                      <span className="text-galsendev-blue mt-1">✓</span>
                       <span>Filtre par ville ou par technologie</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-senegal-green mt-1">✓</span>
+                      <span className="text-galsendev-blue mt-1">✓</span>
                       <span>Connecte-toi directement via GitHub</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-senegal-green mt-1">✓</span>
+                      <span className="text-galsendev-blue mt-1">✓</span>
                       <span>Ajoute ton propre profil facilement</span>
                     </li>
                   </ul>
@@ -141,9 +118,9 @@ export default function About() {
             {/* How to contribute */}
             <section className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-8">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-senegal-red/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-galsendev-blue/10 rounded-lg flex items-center justify-center flex-shrink-0">
                   <svg
-                    className="w-6 h-6 text-senegal-red"
+                    className="w-6 h-6 text-galsendev-blue"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -176,7 +153,7 @@ export default function About() {
                           data/contributors
                         </code>{" "}
                         et ajoute tes informations dans le fichier créé. Crée
-                        une pull request et c'est tout !
+                        une pull request !
                       </p>
                     </div>
                     <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
@@ -205,7 +182,7 @@ export default function About() {
             </section>
 
             {/* Community */}
-            <section className="bg-gradient-to-r from-senegal-green via-senegal-yellow to-senegal-red rounded-lg p-8 text-center">
+            <section className="bg-gradient-to-r from-galsendev-blue to-galsendev-blue-dark rounded-lg p-8 text-center">
               <h3 className="text-2xl font-bold text-white/90 mb-3">
                 Rejoins la communauté Galsen DEV
               </h3>

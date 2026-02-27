@@ -9,12 +9,11 @@ export default function Footer() {
               href="https://galsen.dev"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-semibold text-senegal-green"
+              className="font-semibold text-galsendev-blue"
             >
               Galsen DEV
             </a>
           </p>
-          <p className="text-sm">Hacktoberfest 2025</p>
         </div>
       </div>
     </footer>

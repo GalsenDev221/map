@@ -66,7 +66,7 @@ export default function ContributorCard({ contributor }: ContributorCardProps) {
           {contributor.stack.map((tech, index) => (
             <div
               key={index}
-              className="px-2.5 py-1.5 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors"
+              className="px-2.5 py-1.5 bg-gray-100 text-gray-700 rounded-lg border border-transparent hover:border-galsendev-blue/60 hover:bg-galsendev-blue/10 hover:scale-[1.04] transition-all duration-200"
             >
               <StackIcon tech={tech} size={16} showLabel={true} theme="light" />
             </div>

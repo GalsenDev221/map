@@ -103,7 +103,7 @@ export default function FilterBar({
         {hasActiveFilters && (
           <button
             onClick={resetFilters}
-            className="text-sm text-senegal-green hover:text-senegal-green/80 font-medium transition-colors"
+            className="text-sm text-galsendev-blue hover:text-galsendev-blue/80 font-medium transition-colors"
           >
             Réinitialiser
           </button>
@@ -138,7 +138,7 @@ export default function FilterBar({
               value={searchTerm}
               onChange={(e) => handleSearchChange(e.target.value)}
               placeholder="Ex : Fatou, MoussaDev, @github..."
-              className="w-full pl-10 px-4 py-2 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-senegal-green focus:border-transparent text-gray-900 dark:text-white"
+              className="w-full pl-10 px-4 py-2 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-galsendev-blue focus:border-transparent text-gray-900 dark:text-white"
             />
 
             {searchTerm && (
@@ -176,7 +176,7 @@ export default function FilterBar({
           <select
             value={selectedCity}
             onChange={(e) => handleCityChange(e.target.value)}
-            className="w-full px-4 py-2 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-senegal-green focus:border-transparent text-gray-900 dark:text-white"
+            className="w-full px-4 py-2 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-galsendev-blue focus:border-transparent text-gray-900 dark:text-white"
           >
             {cities.map((city) => (
               <option key={city} value={city}>
@@ -194,7 +194,7 @@ export default function FilterBar({
           <select
             value={selectedStack}
             onChange={(e) => handleStackChange(e.target.value)}
-            className="w-full px-4 py-2 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-senegal-green focus:border-transparent text-gray-900 dark:text-white"
+            className="w-full px-4 py-2 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-galsendev-blue focus:border-transparent text-gray-900 dark:text-white"
           >
             {stacks.map((stack) => (
               <option key={stack} value={stack}>
