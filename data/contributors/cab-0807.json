@@ -5,8 +5,10 @@
     "React Native",
     "TypeScript",
     "Expo",
-    "Node.js",
-    "React"
+    "React Navigation",
+    "React Hook Form",
+    "Axios",
+    "Node.js"
   ],
   "github": "https://github.com/cab-0807",
   "lat": 14.770476,
