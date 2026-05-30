@@ -1,0 +1,25 @@
+{
+  "name": "Abdou TOP (abdotop)",
+  "city": "Dakar",
+  "stack": [
+    "Go",
+    "TypeScript",
+    "JavaScript",
+    "Dart",
+    "Flutter",
+    "Preact",
+    "React",
+    "SQL",
+    "Redis",
+    "Deno",
+    "Bun",
+    "Node.js",
+    "Meilisearch",
+    "CI/CD",
+    "Docker",
+    "Git"
+  ],
+  "github": "https://github.com/abdotop",
+  "lat": 14.6937,
+  "lng": -17.4441
+}
